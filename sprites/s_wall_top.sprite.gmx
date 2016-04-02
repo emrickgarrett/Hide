@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>64</width>
-  <height>64</height>
+  <height>28</height>
   <frames>
     <frame index="0">images\s_wall_top_0.png</frame>
   </frames>
