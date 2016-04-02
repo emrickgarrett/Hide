@@ -9,6 +9,9 @@
     <sprite>sprites\s_hide</sprite>
     <sprite>sprites\s_play</sprite>
     <sprite>sprites\s_killer</sprite>
+    <sprite>sprites\s_wood_floor</sprite>
+    <sprite>sprites\s_carpet_orange</sprite>
+    <sprite>sprites\s_carpet_green</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
