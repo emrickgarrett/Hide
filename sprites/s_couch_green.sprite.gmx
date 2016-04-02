@@ -17,8 +17,8 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>200</width>
-  <height>64</height>
+  <width>176</width>
+  <height>59</height>
   <frames>
     <frame index="0">images\s_couch_green_0.png</frame>
   </frames>
