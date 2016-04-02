@@ -12,6 +12,15 @@
     <sprite>sprites\s_wood_floor</sprite>
     <sprite>sprites\s_carpet_orange</sprite>
     <sprite>sprites\s_carpet_green</sprite>
+    <sprite>sprites\s_wall_left</sprite>
+    <sprite>sprites\s_wall_right</sprite>
+    <sprite>sprites\s_wall_top</sprite>
+    <sprite>sprites\s_wall_bottom</sprite>
+    <sprite>sprites\s_tv_black</sprite>
+    <sprite>sprites\s_armchair_green</sprite>
+    <sprite>sprites\s_couch_green</sprite>
+    <sprite>sprites\s_bed_green</sprite>
+    <sprite>sprites\s_carpet_blue</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -23,6 +32,23 @@
       <object>objects\o_wood_floor</object>
       <object>objects\o_carpet_orange</object>
       <object>objects\o_carpet_green</object>
+      <object>objects\o_carpet_blue</object>
+    </objects>
+    <objects name="objects">
+      <objects name="walls">
+        <object>objects\o_wall_left</object>
+        <object>objects\o_wall_top</object>
+        <object>objects\o_wall</object>
+        <object>objects\o_wall_bottom</object>
+        <object>objects\o_wall_right</object>
+      </objects>
+      <objects name="furniture">
+        <object>objects\o_tv_black</object>
+        <object>objects\o_furniture</object>
+        <object>objects\o_armchair_green</object>
+        <object>objects\o_couch_green</object>
+        <object>objects\o_bed_green</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
