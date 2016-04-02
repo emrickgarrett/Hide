@@ -6,25 +6,48 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_hide</sprite>
-    <sprite>sprites\s_play</sprite>
-    <sprite>sprites\s_killer</sprite>
-    <sprite>sprites\s_wood_floor</sprite>
-    <sprite>sprites\s_carpet_orange</sprite>
-    <sprite>sprites\s_carpet_green</sprite>
-    <sprite>sprites\s_wall_left</sprite>
-    <sprite>sprites\s_wall_right</sprite>
-    <sprite>sprites\s_wall_top</sprite>
-    <sprite>sprites\s_wall_bottom</sprite>
-    <sprite>sprites\s_tv_black</sprite>
-    <sprite>sprites\s_armchair_green</sprite>
-    <sprite>sprites\s_couch_green</sprite>
-    <sprite>sprites\s_bed_green</sprite>
-    <sprite>sprites\s_carpet_blue</sprite>
     <sprites name="light_engine_sprites">
       <sprite>sprites\spr_box</sprite>
       <sprite>sprites\spr_light</sprite>
       <sprite>sprites\spr_wall</sprite>
+    </sprites>
+    <sprites name="menu">
+      <sprite>sprites\s_play</sprite>
+      <sprite>sprites\s_hide</sprite>
+    </sprites>
+    <sprites name="floor">
+      <sprite>sprites\s_kitchen_white</sprite>
+      <sprite>sprites\s_kitchen_blue</sprite>
+      <sprite>sprites\s_kitchen_orange</sprite>
+      <sprite>sprites\s_carpet_blue</sprite>
+      <sprite>sprites\s_carpet_orange</sprite>
+      <sprite>sprites\s_carpet_green</sprite>
+      <sprite>sprites\s_wood_floor</sprite>
+    </sprites>
+    <sprites name="furniture">
+      <sprite>sprites\s_armchair_orange</sprite>
+      <sprite>sprites\s_bed_orange</sprite>
+      <sprite>sprites\s_countertop_corner</sprite>
+      <sprite>sprites\s_countertop</sprite>
+      <sprite>sprites\s_tv_black</sprite>
+      <sprite>sprites\s_couch_green</sprite>
+      <sprite>sprites\s_armchair_green</sprite>
+      <sprite>sprites\s_bed_green</sprite>
+      <sprite>sprites\s_sink</sprite>
+      <sprite>sprites\s_armchair_black</sprite>
+      <sprite>sprites\s_countertop_stove</sprite>
+      <sprite>sprites\s_tv_brown</sprite>
+      <sprite>sprites\s_tv_flatscreen</sprite>
+      <sprite>sprites\s_couch_black</sprite>
+    </sprites>
+    <sprites name="walls">
+      <sprite>sprites\s_wall_left</sprite>
+      <sprite>sprites\s_wall_bottom</sprite>
+      <sprite>sprites\s_wall_right</sprite>
+      <sprite>sprites\s_wall_top</sprite>
+    </sprites>
+    <sprites name="characters">
+      <sprite>sprites\s_killer</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -42,6 +65,9 @@
       <object>objects\o_carpet_orange</object>
       <object>objects\o_carpet_green</object>
       <object>objects\o_carpet_blue</object>
+      <object>objects\o_kitchen_orange</object>
+      <object>objects\o_kitchen_blue</object>
+      <object>objects\o_kitchen_white</object>
     </objects>
     <objects name="objects">
       <objects name="walls">
@@ -57,6 +83,16 @@
         <object>objects\o_armchair_green</object>
         <object>objects\o_couch_green</object>
         <object>objects\o_bed_green</object>
+        <object>objects\o_armchair_orange</object>
+        <object>objects\o_bed_orange</object>
+        <object>objects\o_countertop_corner</object>
+        <object>objects\o_countertop</object>
+        <object>objects\o_sink</object>
+        <object>objects\o_armchair_black</object>
+        <object>objects\o_countertop_stove</object>
+        <object>objects\o_tv_brown</object>
+        <object>objects\o_tv_flatscreen</object>
+        <object>objects\o_couch_black</object>
       </objects>
     </objects>
     <objects name="light_engine_obj">
