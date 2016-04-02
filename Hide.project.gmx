@@ -23,6 +23,8 @@
       <sprite>sprites\s_carpet_orange</sprite>
       <sprite>sprites\s_carpet_green</sprite>
       <sprite>sprites\s_wood_floor</sprite>
+      <sprite>sprites\s_wood_orange</sprite>
+      <sprite>sprites\s_wood_light</sprite>
     </sprites>
     <sprites name="furniture">
       <sprite>sprites\s_armchair_orange</sprite>
@@ -39,6 +41,7 @@
       <sprite>sprites\s_tv_brown</sprite>
       <sprite>sprites\s_tv_flatscreen</sprite>
       <sprite>sprites\s_couch_black</sprite>
+      <sprite>sprites\s_flowerpot</sprite>
     </sprites>
     <sprites name="walls">
       <sprite>sprites\s_wall_left</sprite>
@@ -48,6 +51,19 @@
     </sprites>
     <sprites name="characters">
       <sprite>sprites\s_killer</sprite>
+    </sprites>
+    <sprites name="items">
+      <sprite>sprites\s_plate</sprite>
+      <sprite>sprites\s_plates</sprite>
+      <sprite>sprites\s_toast</sprite>
+      <sprite>sprites\s_toaster</sprite>
+      <sprite>sprites\s_knife</sprite>
+      <sprite>sprites\s_cutting_board_orange</sprite>
+      <sprite>sprites\s_cutting_board_plain</sprite>
+      <sprite>sprites\s_debris1</sprite>
+      <sprite>sprites\s_debris2</sprite>
+      <sprite>sprites\s_debris3</sprite>
+      <sprite>sprites\s_stain</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -62,6 +78,8 @@
     <object>objects\o_killer</object>
     <objects name="floors">
       <object>objects\o_wood_floor</object>
+      <object>objects\o_wood_orange</object>
+      <object>objects\o_wood_light</object>
       <object>objects\o_carpet_orange</object>
       <object>objects\o_carpet_green</object>
       <object>objects\o_carpet_blue</object>
@@ -93,6 +111,19 @@
         <object>objects\o_tv_brown</object>
         <object>objects\o_tv_flatscreen</object>
         <object>objects\o_couch_black</object>
+      </objects>
+      <objects name="items">
+        <object>objects\o_plate</object>
+        <object>objects\o_plates</object>
+        <object>objects\o_toast</object>
+        <object>objects\o_toaster</object>
+        <object>objects\o_knife</object>
+        <object>objects\o_cutting_board_oranges</object>
+        <object>objects\o_cutting_board_normal</object>
+        <object>objects\o_debris1</object>
+        <object>objects\o_debris2</object>
+        <object>objects\o_debris3</object>
+        <object>objects\o_stain</object>
       </objects>
     </objects>
     <objects name="light_engine_obj">

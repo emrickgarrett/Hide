@@ -57,9 +57,6 @@
     <instance objName="o_wood_floor" x="192" y="0" name="inst_8441BB08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="256" y="0" name="inst_2DB9D9DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="320" y="0" name="inst_F07BF2E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="384" y="0" name="inst_B67C2D85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="448" y="0" name="inst_3C7F7AD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="512" y="0" name="inst_9745E802" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="768" y="0" name="inst_8272E3D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="0" y="64" name="inst_DF1A73B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="64" y="64" name="inst_D5CC35EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -67,9 +64,6 @@
     <instance objName="o_wood_floor" x="192" y="64" name="inst_8ABF215B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="256" y="64" name="inst_4D46EF7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="320" y="64" name="inst_9F1AC696" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="384" y="64" name="inst_E651D259" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="448" y="64" name="inst_2BE9956A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="512" y="64" name="inst_5F41BE4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="768" y="64" name="inst_DBBB368C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="0" y="128" name="inst_D3D8DB1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="64" y="128" name="inst_7553140A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,9 +71,6 @@
     <instance objName="o_wood_floor" x="192" y="128" name="inst_F2B616A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="256" y="128" name="inst_3FA37A3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="320" y="128" name="inst_ACDA66CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="384" y="128" name="inst_A4156221" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="448" y="128" name="inst_3D3D920A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="512" y="128" name="inst_004BAFA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="768" y="128" name="inst_52F1B9FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="0" y="192" name="inst_C3D32515" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="64" y="192" name="inst_12306395" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -87,9 +78,6 @@
     <instance objName="o_wood_floor" x="192" y="192" name="inst_20D64A56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="256" y="192" name="inst_C175C7A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="320" y="192" name="inst_FB01935D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="384" y="192" name="inst_807F7CC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="448" y="192" name="inst_7F1D9A5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="512" y="192" name="inst_37393566" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="768" y="192" name="inst_0370559B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="0" y="256" name="inst_E727E257" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="64" y="256" name="inst_82D48BA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -97,9 +85,6 @@
     <instance objName="o_wood_floor" x="192" y="256" name="inst_B866E6FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="256" y="256" name="inst_3678AAC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="320" y="256" name="inst_7F9DD7C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="384" y="256" name="inst_263ACEF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="448" y="256" name="inst_BF4F685F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_wood_floor" x="512" y="256" name="inst_F38E63D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="768" y="256" name="inst_E0D54A28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="0" y="320" name="inst_24E9B9F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_floor" x="64" y="320" name="inst_E30F1FF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -154,7 +139,7 @@
     <instance objName="o_wall_right" x="256" y="224" name="inst_E80B904A" locked="0" code="" scaleX="1" scaleY="4.5" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_right" x="384" y="512" name="inst_D83469F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_right" x="384" y="224" name="inst_31AF572A" locked="0" code="" scaleX="1" scaleY="3.55555558204651" colour="4294967295" rotation="0"/>
-    <instance objName="o_wall_right" x="384" y="32" name="inst_EB69E006" locked="0" code="" scaleX="1.13999998569489" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="o_wall_right" x="383" y="28" name="inst_EB69E006" locked="0" code="" scaleX="1.13999998569489" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_top" x="409" y="319" name="inst_E3A27BBC" locked="0" code="" scaleX="6.58730173110962" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_left" x="576" y="0" name="inst_BBDEDFEE" locked="0" code="" scaleX="1.14285719394684" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="o_carpet_green" x="384" y="480" name="inst_3D76AC69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -205,6 +190,27 @@
     <instance objName="o_bed_green" x="656" y="199" name="inst_9BAC51A7" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
     <instance objName="o_tv_black" x="664" y="272" name="inst_37EF1C5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_couch_green" x="100" y="164" name="inst_9A24B1F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="384" y="0" name="inst_307BDBE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="448" y="0" name="inst_6A302050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="512" y="0" name="inst_AD1CDC99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="384" y="64" name="inst_5A36EAB6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="384" y="128" name="inst_43C68E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="384" y="192" name="inst_A01B00E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="384" y="256" name="inst_38F7B885" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="448" y="256" name="inst_7D19F9D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="512" y="256" name="inst_ED1BF560" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="512" y="192" name="inst_D92DC62D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="448" y="192" name="inst_16858C63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="448" y="128" name="inst_3FAFFEAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="512" y="128" name="inst_61726FF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="512" y="64" name="inst_961D23D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_kitchen_white" x="448" y="64" name="inst_E98DCF03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_sink" x="420" y="90" name="inst_AB08867C" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="o_countertop" x="484" y="90" name="inst_01F63A09" locked="0" code="" scaleX="1" scaleY="-1" colour="4294967295" rotation="0"/>
+    <instance objName="o_countertop_stove" x="514" y="191" name="inst_511DD92D" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="o_countertop" x="514" y="191" name="inst_297073E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="o_plates" x="491" y="39" name="inst_D0AD8213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_toast" x="518" y="138" name="inst_FC0A3BE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="0" y="-32" name="inst_A9BC2C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
