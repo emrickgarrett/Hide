@@ -17,8 +17,8 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>70</width>
-  <height>225</height>
+  <width>64</width>
+  <height>172</height>
   <frames>
     <frame index="0">images\s_bed_green_0.png</frame>
   </frames>
