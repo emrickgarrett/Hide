@@ -58,8 +58,8 @@ with (m) {
           <argument>
             <kind>1</kind>
             <string>// Update one light to follow the mouse
-m.x = mouse_x;
-m.y = mouse_y;
+m.x = o_killer.x;
+m.y = o_killer.y;
 
 // Update this light to draw the correct shadows
 with (m)
