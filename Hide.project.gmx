@@ -75,9 +75,10 @@
     <script>scripts\light_change_scale.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\o_hide</object>
-    <object>objects\o_play</object>
-    <object>objects\o_killer</object>
+    <objects name="characters">
+      <object>objects\o_killer</object>
+      <object>objects\o_hider</object>
+    </objects>
     <objects name="floors">
       <object>objects\o_wood_floor</object>
       <object>objects\o_wood_orange</object>
@@ -134,6 +135,10 @@
       <object>objects\obj_control</object>
       <object>objects\obj_light</object>
       <object>objects\obj_wall</object>
+    </objects>
+    <objects name="menu">
+      <object>objects\o_hide</object>
+      <object>objects\o_play</object>
     </objects>
   </objects>
   <rooms name="rooms">

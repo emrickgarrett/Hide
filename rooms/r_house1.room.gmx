@@ -211,6 +211,7 @@
     <instance objName="o_countertop" x="514" y="191" name="inst_297073E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="o_plates" x="491" y="39" name="inst_D0AD8213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_toast" x="518" y="138" name="inst_FC0A3BE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hider" x="544" y="480" name="inst_E6807B47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="0" y="-32" name="inst_A9BC2C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
