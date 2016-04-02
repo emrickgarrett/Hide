@@ -51,6 +51,8 @@
     </sprites>
     <sprites name="characters">
       <sprite>sprites\s_killer</sprite>
+      <sprite>sprites\s_hider1</sprite>
+      <sprite>sprites\s_hider2</sprite>
     </sprites>
     <sprites name="items">
       <sprite>sprites\s_plate</sprite>
