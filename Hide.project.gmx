@@ -19,10 +19,15 @@
     <object>objects\o_hide</object>
     <object>objects\o_play</object>
     <object>objects\o_killer</object>
+    <objects name="floors">
+      <object>objects\o_wood_floor</object>
+      <object>objects\o_carpet_orange</object>
+      <object>objects\o_carpet_green</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
-    <room>rooms\r_cellar</room>
+    <room>rooms\r_house1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
