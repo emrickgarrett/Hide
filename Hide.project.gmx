@@ -111,6 +111,7 @@
         <object>objects\o_tv_brown</object>
         <object>objects\o_tv_flatscreen</object>
         <object>objects\o_couch_black</object>
+        <object>objects\o_flowerpot</object>
       </objects>
       <objects name="items">
         <object>objects\o_plate</object>
