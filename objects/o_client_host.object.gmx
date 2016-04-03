@@ -31,6 +31,10 @@
 TEST = 0;
 KEY = 1;
 MOUSE = 2;
+KILLER = 3;
+HIDER1 = 4;
+HIDER2 = 5;
+TIMER = 6;
 
 // Variables
 type = network_socket_tcp;

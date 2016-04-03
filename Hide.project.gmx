@@ -78,6 +78,7 @@
     <script>scripts\light_change_scale.gml</script>
     <script>scripts\ReceivedPacket.gml</script>
     <script>scripts\snd_packet_server.gml</script>
+    <script>scripts\snd_packet_clients.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="characters">

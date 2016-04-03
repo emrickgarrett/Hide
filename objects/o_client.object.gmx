@@ -31,6 +31,10 @@
 TEST = 0;
 KEY = 1;
 MOUSE = 2;
+KILLER = 3;
+HIDER1 = 4;
+HIDER2 = 5;
+TIMER = 6;
 
 // Variables
 type = network_socket_tcp;
@@ -242,6 +246,24 @@ if n_id == client_socket{
             case TEST:
                 show_debug_message("Packet Received");
                 show_debug_message(buffer_read(t_buffer, buffer_string));
+            break;
+            case KILLER:
+                show_debug_message("Killer location updated");
+                o_killer.x = buffer_read(t_buffer, buffer_u16);
+                o_killer.y = buffer_read(t_buffer, buffer_u16);
+                o_killer.image_angle = buffer_read(t_buffer, buffer_u32);
+            break;
+            case HIDER1:
+                show_debug_message("Hider1 location updated");
+                o_hider.x = buffer_read(t_buffer, buffer_u16);
+                o_hider.y = buffer_read(t_buffer, buffer_u16);
+                o_hider.image_angle = buffer_read(t_buffer, buffer_u32);
+            break;
+            case HIDER2:
+                show_debug_message("Hider2 Location updated");
+                o_hider2.x = buffer_read(t_buffer, buffer_u16);
+                o_hider2.y = buffer_read(t_buffer, buffer_u16);
+                o_hider2.image_angle = buffer_read(t_buffer, buffer_u32);
             break;
         }
     }
