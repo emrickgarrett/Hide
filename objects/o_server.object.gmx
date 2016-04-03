@@ -42,7 +42,7 @@ HIDERS = 10;
 CHAR = 11;
 SND = 12;
 
-map = get_integer("Enter a map number 1-2", 1);
+map = get_integer("Enter a map number 1-4", 1);
 
 
 // Variables
@@ -99,6 +99,12 @@ first_run = 1;
 switch(map){
     case 2:
         room_goto(r_house2);
+        break;
+    case 3:
+        room_goto(r_house4);
+        break;
+    case 4:
+        room_goto(r_maze);
         break;
     default:
         room_goto(r_house3);

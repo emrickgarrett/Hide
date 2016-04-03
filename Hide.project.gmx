@@ -179,7 +179,9 @@
     <room>rooms\r_house3</room>
     <room>rooms\r_ted_loses</room>
     <room>rooms\r_ted_wins</room>
+    <room>rooms\r_house4</room>
     <room>rooms\r_house1</room>
+    <room>rooms\r_maze</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
