@@ -70,7 +70,7 @@ if server &lt; 0 {
           <argument>
             <kind>1</kind>
             <string>/// Send data to the server
-
+/*
 var t_buffer = buffer_create(256, buffer_grow, 1);
 buffer_seek(t_buffer, buffer_seek_start, 0);
 buffer_write(t_buffer, buffer_u16, TEST);
@@ -78,6 +78,71 @@ buffer_write(t_buffer, buffer_string, "SWIGG");
 //More data here...
 var result = network_send_packet(client_socket, t_buffer, buffer_tell(t_buffer));
 buffer_delete(t_buffer);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Send Keystrokes to server
+
+var keyPressed = 0;
+var buffer = buffer_create(256, buffer_grow, 1);
+buffer_seek(buffer, buffer_seek_start, 0);
+buffer_write(buffer, buffer_u16, KEY);
+var length = 0;
+var arr;
+
+if(keyboard_check(ord("W")))
+{
+    keyPressed = 1;
+    arr[length] = "W";
+    length++;
+}
+if(keyboard_check(ord("S")))
+{
+    keyPressed = 1;
+    arr[length] = "S";
+    length++;
+}
+if(keyboard_check(ord("A")))
+{
+    keyPressed = 1;
+    arr[length] = "A";
+    length++;
+}
+if(keyboard_check(ord("D")))
+{
+    keyPressed = 1;
+    arr[length] = "D";
+    length++;
+}
+
+if(keyPressed){
+    //Write Buffer
+    buffer_write(buffer, buffer_u16, length);
+    for(i = 0; i &lt; length; i++){
+        buffer_write(buffer, buffer_string, arr[i]);
+    }
+    snd_packet_server(client_socket, buffer);
+}
+
+buffer_delete(buffer);
 </string>
           </argument>
         </arguments>

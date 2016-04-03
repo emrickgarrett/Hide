@@ -75,11 +75,13 @@
     <script>scripts\light_update.gml</script>
     <script>scripts\light_change_scale.gml</script>
     <script>scripts\ReceivedPacket.gml</script>
+    <script>scripts\snd_packet_server.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="characters">
       <object>objects\o_killer</object>
       <object>objects\o_hider</object>
+      <object>objects\o_hider2</object>
     </objects>
     <objects name="floors">
       <object>objects\o_wood_floor</object>

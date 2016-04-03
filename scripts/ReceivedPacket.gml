@@ -17,7 +17,29 @@ var inst = argument[2];
     show_debug_message(inst);
     switch(msgid){
         case KEY:
-        //A key has been pressed so read the keypress data from the buffer
+            //A key has been pressed so read the keypress data from the buffer
+            show_debug_message("Key Press");
+            var length = buffer_read(buffer, buffer_u16);
+            for(i = 0; i < length; i++){
+                var key = buffer_read(buffer, buffer_string);
+                show_debug_message(key);
+                if(inst == 0){ //The Killer!
+                    switch(key){
+                        case "W":
+                            o_killer.y -= 8;
+                        break;
+                        case "A":
+                            o_killer.x -= 8;
+                        break;
+                        case "S":
+                            o_killer.y += 8;
+                        break;
+                        case "D":
+                            o_killer.x += 8;
+                        break;
+                    }
+                }
+            }
         break;
         case TEST:
             show_debug_message("Packet received");
