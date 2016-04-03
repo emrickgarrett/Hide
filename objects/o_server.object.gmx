@@ -88,7 +88,7 @@ if server_socket &gt;= 0{
             <string>/// Gameplay variables
 
 gameStart = 0;
-debug = 1;
+debug = 0;
 first_run = 1;
 </string>
           </argument>
@@ -265,8 +265,8 @@ if(ds_list_size(socket_list) &gt;= 3 or debug){
     
     if(first_run){
         alarm[0] = 10;
-        first_run = false;
         snd_clients_id(socket_list);
+        first_run = false;
     }
 }
 </string>

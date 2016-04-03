@@ -28,6 +28,10 @@
             <string>image_speed = 0;
 image_angle = point_direction(x, y, mouse_x, mouse_y)
 following = 0;
+sprint = 0;
+sprint_remaining = 160;
+max_sprint = 160;
+sprint_speed = 4;
 </string>
           </argument>
         </arguments>
@@ -54,7 +58,7 @@ following = 0;
 if(!instance_exists(o_server)){
     player_light = instance_create(x, y, obj_light);
     with (player_light) {
-      image_blend = make_color_rgb(50 + irandom(55), 50 + irandom(55), 50 + irandom(55));
+      image_blend = make_color_rgb(60 + irandom(55), 60 + irandom(55), 60 + irandom(55));
       light_change_scale(1, 1);
       light_update();
     }
@@ -164,6 +168,41 @@ if(!instance_exists(o_server)){
     
     with (player_light) {
         light_update();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// control the sprint
+
+if(sprint and sprint_remaining &gt; 0){
+    sprint_remaining -= 10;
+    if(hspeed &gt; 0) hspeed = hspeed + sprint_speed;
+    if(vspeed &gt; 0) vspeed = vspeed + sprint_speed;
+    if(vspeed &lt; 0) vspeed = vspeed - sprint_speed;
+    if(hspeed &lt; 0) hspeed = hspeed - sprint_speed;
+}
+
+if(!sprint){
+    if(sprint_remaining &lt; max_sprint){
+        sprint_remaining++;
     }
 }
 </string>

@@ -44,7 +44,7 @@ CHAR = 11;
 // Variables
 type = network_socket_tcp;
 PORT = 6510;// Post server port here.
-IP = get_string("Please enter the hosts IP", "127.0.0.1"); // Post server IP here.
+IP = get_string("Please enter the hosts IP", "10.1.56.46"); // Post server IP here.
 show_debug_message("User entered: " + IP);
 client_socket = network_create_socket(type);
 show_debug_message("Client Socket Created");
@@ -191,6 +191,11 @@ if(keyboard_check(ord("D")))
     arr[length] = "D";
     length++;
 }
+if(keyboard_check(vk_lshift)){
+    keyPressed = 1;
+    arr[length] = "SHFT";
+    length++;
+}
 
 if(keyPressed){
     //Write Buffer
@@ -253,6 +258,11 @@ if(keyboard_check_released(ord("D")))
 {
     keyReleased = 1;
     arr[length] = "D";
+    length++;
+}
+if(keyboard_check_released(vk_lshift)){
+    keyReleased = 1;
+    arr[length] = "SHFT";
     length++;
 }
 
