@@ -32,6 +32,7 @@ sprint = 0;
 sprint_remaining = 160;
 max_sprint = 160;
 sprint_speed = 4;
+start_sprint = 1;
 </string>
           </argument>
         </arguments>
@@ -192,18 +193,26 @@ if(!instance_exists(o_server)){
             <kind>1</kind>
             <string>/// control the sprint
 
-if(sprint and sprint_remaining &gt; 0){
+if(sprint and sprint_remaining &gt; 30){
     sprint_remaining -= 10;
     if(hspeed &gt; 0) hspeed = hspeed + sprint_speed;
     if(vspeed &gt; 0) vspeed = vspeed + sprint_speed;
     if(vspeed &lt; 0) vspeed = vspeed - sprint_speed;
     if(hspeed &lt; 0) hspeed = hspeed - sprint_speed;
+    
+    if(start_sprint){
+        if(!audio_is_playing(whoosh)){
+            audio_play_sound(whoosh, 1, 0);
+        }
+        start_sprint = 0;
+    }
 }
 
 if(!sprint){
     if(sprint_remaining &lt; max_sprint){
         sprint_remaining++;
     }
+    start_sprint = 1;
 }
 </string>
           </argument>

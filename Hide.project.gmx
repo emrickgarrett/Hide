@@ -13,6 +13,7 @@
     <sound>sound\scream_4</sound>
     <sound>sound\scream_5</sound>
     <sound>sound\ambience</sound>
+    <sound>sound\whoosh</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="light_engine_sprites">
