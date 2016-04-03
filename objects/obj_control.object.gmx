@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -29,13 +29,15 @@
 sur = surface_create(room_width, room_height);
 
 // Create a light
-m = instance_create(0, 0, obj_light);
-with (m) {
-    // Killer will have a red glow to their light
-    image_blend = make_color_rgb(255, 75, 75);
-    light_change_scale(1.2, 1.2);
-    // Update the light, so it's surface is drawn correctly
-    light_update();
+if(!instance_exists(o_client)){
+    m = instance_create(0, 0, obj_light);
+    with (m) {
+        // Killer will have a red glow to their light
+        image_blend = make_color_rgb(255, 75, 75);
+        light_change_scale(1.2, 1.2);
+        // Update the light, so it's surface is drawn correctly
+        light_update();
+    }
 }
 </string>
           </argument>
@@ -60,12 +62,14 @@ with (m) {
           <argument>
             <kind>1</kind>
             <string>// Update one light to follow the mouse
-m.x = o_killer.x;
-m.y = o_killer.y;
-
-// Update this light to draw the correct shadows
-with (m)
-  light_update();
+if(!instance_exists(o_client)){
+    m.x = o_killer.x;
+    m.y = o_killer.y;
+    
+    // Update this light to draw the correct shadows
+    with (m)
+      light_update();
+}
 </string>
           </argument>
         </arguments>
