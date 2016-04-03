@@ -720,8 +720,6 @@
     <instance objName="o_carpet_orange" x="2112" y="768" name="inst_84CE173C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_carpet_orange" x="2080" y="768" name="inst_76201796" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wood_light" x="2016" y="768" name="inst_AFBAB3AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hider" x="1984" y="96" name="inst_A1B4C09C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_hider2" x="320" y="224" name="inst_B15224E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_left" x="2080" y="512" name="inst_160BBB40" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_top" x="2176" y="512" name="inst_45FF2096" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_wall_top" x="2528" y="512" name="inst_560B3D72" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
@@ -798,6 +796,8 @@
     <instance objName="o_wall_left" x="2752" y="608" name="inst_FDDC1648" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="o_bed_green" x="2852" y="601" name="inst_C6D2DC1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_flowerpot" x="2791" y="730" name="inst_7FEF8B4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hider" x="1984" y="96" name="inst_A1B4C09C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_hider2" x="320" y="224" name="inst_B15224E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="-64" y="0" name="inst_2966FF74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

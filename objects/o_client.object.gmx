@@ -41,6 +41,7 @@ CRUZ = 9;
 HIDERS = 10;
 CHAR = 11;
 SND = 12;
+MAP = 13;
 
 // Variables
 type = network_socket_tcp;
@@ -377,22 +378,28 @@ if n_id == client_socket{
                 show_debug_message(buffer_read(t_buffer, buffer_string));
             break;
             case KILLER:
-                show_debug_message("Killer location updated");
-                o_killer.x = buffer_read(t_buffer, buffer_u16);
-                o_killer.y = buffer_read(t_buffer, buffer_u16);
-                o_killer.image_angle = buffer_read(t_buffer, buffer_u32);
+                if(instance_exists(o_killer)){
+                    show_debug_message("Killer location updated");
+                    o_killer.x = buffer_read(t_buffer, buffer_u16);
+                    o_killer.y = buffer_read(t_buffer, buffer_u16);
+                    o_killer.image_angle = buffer_read(t_buffer, buffer_u32);
+                }
             break;
             case HIDER1:
-                show_debug_message("Hider1 location updated");
-                o_hider.x = buffer_read(t_buffer, buffer_u16);
-                o_hider.y = buffer_read(t_buffer, buffer_u16);
-                o_hider.image_angle = buffer_read(t_buffer, buffer_u32);
+                if(instance_exists(o_hider)){
+                    show_debug_message("Hider1 location updated");
+                    o_hider.x = buffer_read(t_buffer, buffer_u16);
+                    o_hider.y = buffer_read(t_buffer, buffer_u16);
+                    o_hider.image_angle = buffer_read(t_buffer, buffer_u32);
+                }
             break;
             case HIDER2:
-                show_debug_message("Hider2 Location updated");
-                o_hider2.x = buffer_read(t_buffer, buffer_u16);
-                o_hider2.y = buffer_read(t_buffer, buffer_u16);
-                o_hider2.image_angle = buffer_read(t_buffer, buffer_u32);
+                if(instance_exists(o_hider2)){
+                    show_debug_message("Hider2 Location updated");
+                    o_hider2.x = buffer_read(t_buffer, buffer_u16);
+                    o_hider2.y = buffer_read(t_buffer, buffer_u16);
+                    o_hider2.image_angle = buffer_read(t_buffer, buffer_u32);
+                }
             break;
             case GAME_OVER:
                 show_debug_message("GAME OVER");
@@ -423,6 +430,23 @@ if n_id == client_socket{
                     if(!audio_is_playing(whoosh)){
                         audio_play_sound(whoosh, 1, 0);
                     }
+                }
+            break;
+            case MAP:
+                show_debug_message("Receiving Map");
+                switch(buffer_read(t_buffer, buffer_u16)){
+                    case 2:
+                        room_goto(r_house2);
+                        break;
+                    case 3:
+                        room_goto(r_house4);
+                        break;
+                    case 4:
+                        room_goto(r_maze);
+                        break;
+                    default:
+                        room_goto(r_house3);
+                    break;  
                 }
             break;
         }

@@ -41,6 +41,7 @@ CRUZ = 9;
 HIDERS = 10;
 CHAR = 11;
 SND = 12;
+MAP = 13;
 
 map = get_integer("Enter a map number 1-4", 1);
 
@@ -93,6 +94,8 @@ if server_socket &gt;= 0{
 gameStart = 0;
 debug = 0;
 first_run = 1;
+load_map = 0;
+
 
 
 //Go to the correct map
@@ -168,6 +171,66 @@ network_destroy(server_socket);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// They survived!
+
+var buffer = buffer_create(256, buffer_grow, 1);
+buffer_seek(buffer, buffer_seek_start, 0);
+buffer_write(buffer, buffer_u16, GAME_OVER);
+buffer_write(buffer, buffer_u16, HIDERS);
+    
+snd_packet_clients(socket_list, buffer);
+buffer_delete(buffer);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Start game
+
+if(first_run){
+    snd_clients_id(socket_list);
+    alarm[0] = 10;
+    first_run = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -212,9 +275,7 @@ if(!audio_is_playing(whacky_bird)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Send data to le clients (Make dat $$$)
-
-//Send Killer location data
+            <string>//Send Killer location data
 var buffer = buffer_create(256, buffer_grow, 1);
 buffer_seek(buffer, buffer_seek_start, 0);
 buffer_write(buffer, buffer_u16, KILLER);
@@ -306,12 +367,14 @@ if(!instance_exists(o_hider) and !instance_exists(o_hider2)){
 
 if(ds_list_size(socket_list) &gt;= num_players or debug){
     gameStart = 1;
-    
-    if(first_run){
-        alarm[0] = 10;
-        snd_clients_id(socket_list);
-        first_run = false;
+    /// Send data to le clients (Make dat $$$)
+    if(!load_map){
+        send_client_map(socket_list, map); 
+        load_map = 1;
+        alarm[1] = 5;
+        alarm[2] = 2700;
     }
+    
 }
 </string>
           </argument>

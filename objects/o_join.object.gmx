@@ -28,8 +28,6 @@
             <string>///Ask for IP/Port then create client and join game
 
 client = instance_create(-1000, -1000, o_client);
-
-room_goto_next();
 </string>
           </argument>
         </arguments>
