@@ -25,16 +25,16 @@ var inst = argument[2];
                 if(inst == 0){ //The Killer!
                     switch(key){
                         case "W":
-                            o_killer.y -= 8;
+                            o_killer.vspeed = -8;
                         break;
                         case "A":
-                            o_killer.x -= 8;
+                            o_killer.hspeed = -8;
                         break;
                         case "S":
-                            o_killer.y += 8;
+                            o_killer.vspeed = 8;
                         break;
                         case "D":
-                            o_killer.x += 8;
+                            o_killer.hspeed = 8;
                         break;
                     }
                 }else if(inst == 1){    //Hider 1
