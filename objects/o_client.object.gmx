@@ -39,6 +39,7 @@ KEY_RELEASED = 7;
 GAME_OVER = 8;
 CRUZ = 9;
 HIDERS = 10;
+CHAR = 11;
 
 // Variables
 type = network_socket_tcp;
@@ -369,6 +370,15 @@ if n_id == client_socket{
                 }else if(winner == HIDERS){
                     // hiders won
                     room_goto(r_menu);
+                }
+            break;
+            case CHAR:
+                show_debug_message("Receiving Char");
+                var char = buffer_read(t_buffer, buffer_u16);
+                if(char == 1){
+                    with(o_hider){following = 1;}
+                }else if(char == 2){
+                    with(o_hider2){following = 1;}
                 }
             break;
         }

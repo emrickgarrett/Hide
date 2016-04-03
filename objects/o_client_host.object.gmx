@@ -39,6 +39,7 @@ KEY_RELEASED = 7;
 GAME_OVER = 8;
 CRUZ = 9;
 HIDERS = 10;
+CHAR = 11;
 
 // Variables
 type = network_socket_tcp;

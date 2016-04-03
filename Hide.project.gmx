@@ -87,6 +87,7 @@
     <script>scripts\ReceivedPacket.gml</script>
     <script>scripts\snd_packet_server.gml</script>
     <script>scripts\snd_packet_clients.gml</script>
+    <script>scripts\snd_clients_id.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="characters">
@@ -166,6 +167,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
+    <room>rooms\r_house3</room>
     <room>rooms\r_house1</room>
   </rooms>
   <help>
