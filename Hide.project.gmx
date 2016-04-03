@@ -142,6 +142,10 @@
       <object>objects\o_hide</object>
       <object>objects\o_play</object>
     </objects>
+    <objects name="networking">
+      <object>objects\o_server</object>
+      <object>objects\o_client</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_house1</room>
