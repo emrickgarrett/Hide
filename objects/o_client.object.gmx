@@ -39,7 +39,9 @@ PORT = 6510;// Post server port here.
 IP = get_string("Please enter the hosts IP", "127.0.0.1"); // Post server IP here.
 show_debug_message("User entered: " + IP);
 client_socket = network_create_socket(type);
+show_debug_message("Client Socket Created");
 server = network_connect(client_socket, IP, PORT);
+show_debug_message("Connecting to the Server");
 if server &lt; 0 {
     //No connection, get rekt
     show_debug_message("Not connected");
