@@ -40,6 +40,7 @@ GAME_OVER = 8;
 CRUZ = 9;
 HIDERS = 10;
 CHAR = 11;
+SND = 12;
 
 // Variables
 type = network_socket_tcp;
@@ -413,6 +414,15 @@ if n_id == client_socket{
                     with(o_hider){following = 1;}
                 }else if(char == 2){
                     with(o_hider2){following = 1;}
+                }
+            break;
+            case SND:
+                show_debug_message("Receiving Sound");
+                var sound = buffer_read(t_buffer, buffer_string);
+                if(sound == "boost"){
+                    if(!audio_is_playing(whoosh)){
+                        audio_play_sound(whoosh, 1, 0);
+                    }
                 }
             break;
         }

@@ -40,6 +40,7 @@ GAME_OVER = 8;
 CRUZ = 9;
 HIDERS = 10;
 CHAR = 11;
+SND = 12;
 
 
 // Variables
