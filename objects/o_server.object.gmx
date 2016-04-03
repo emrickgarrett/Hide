@@ -35,6 +35,7 @@ KILLER = 3;
 HIDER1 = 4;
 HIDER2 = 5;
 TIMER = 6;
+KEY_RELEASED = 7;
 
 
 // Variables

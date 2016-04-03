@@ -40,31 +40,86 @@ var inst = argument[2];
                 }else if(inst == 1){    //Hider 1
                     switch(key){
                         case "W":
-                            o_hider.y -= 8;
+                            o_hider.vspeed = -8;
                         break;
                         case "A":
-                            o_hider.x -= 8;
+                            o_hider.hspeed = -8;
                         break;
                         case "S":
-                            o_hider.y += 8;
+                            o_hider.vspeed = 8;
                         break;
                         case "D":
-                            o_hider.x += 8;
+                            o_hider.hspeed = 8;
                         break;
                     }
                 }else if(inst == 2){
                     switch(key){
                         case "W":
-                            o_hider2.y -= 8;
+                            o_hider2.vspeed = -8;
                         break;
                         case "A":
-                            o_hider2.x -= 8;
+                            o_hider2.hspeed = -8;
                         break;
                         case "S":
-                            o_hider2.y += 8;
+                            o_hider2.vspeed = 8;
                         break;
                         case "D":
-                            o_hider2.x += 8;
+                            o_hider2.hspeed = 8;
+                        break;
+                    }
+                }
+            }
+        break;
+        case KEY_RELEASED:
+            //A key has been pressed so read the keypress data from the buffer
+            show_debug_message("Key Release");
+            var length = buffer_read(buffer, buffer_u16);
+            for(i = 0; i < length; i++){
+                var key = buffer_read(buffer, buffer_string);
+                show_debug_message(key);
+                if(inst == 0){ //The Killer!
+                    switch(key){
+                        case "W":
+                            o_killer.vspeed = 0;
+                        break;
+                        case "A":
+                            o_killer.hspeed = 0;
+                        break;
+                        case "S":
+                            o_killer.vspeed = 0;
+                        break;
+                        case "D":
+                            o_killer.hspeed = 0;
+                        break;
+                    }
+                }else if(inst == 1){    //Hider 1
+                    switch(key){
+                        case "W":
+                            o_hider.vspeed = 0;
+                        break;
+                        case "A":
+                            o_hider.hspeed = 0;
+                        break;
+                        case "S":
+                            o_hider.vspeed = 0;
+                        break;
+                        case "D":
+                            o_hider.hspeed = 0;
+                        break;
+                    }
+                }else if(inst == 2){
+                    switch(key){
+                        case "W":
+                            o_hider2.vspeed = 0;
+                        break;
+                        case "A":
+                            o_hider2.hspeed = 0;
+                        break;
+                        case "S":
+                            o_hider2.vspeed = 0;
+                        break;
+                        case "D":
+                            o_hider2.hspeed = 0;
                         break;
                     }
                 }

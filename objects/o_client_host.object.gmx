@@ -35,6 +35,7 @@ KILLER = 3;
 HIDER1 = 4;
 HIDER2 = 5;
 TIMER = 6;
+KEY_RELEASED = 7;
 
 // Variables
 type = network_socket_tcp;
@@ -137,6 +138,70 @@ if(keyboard_check(ord("D")))
 }
 
 if(keyPressed){
+    //Write Buffer
+    buffer_write(buffer, buffer_u16, length);
+    for(i = 0; i &lt; length; i++){
+        buffer_write(buffer, buffer_string, arr[i]);
+    }
+    snd_packet_server(client_socket, buffer);
+}
+
+buffer_delete(buffer);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Send Keystroke releases to server
+
+var keyReleased = 0;
+var buffer = buffer_create(256, buffer_grow, 1);
+buffer_seek(buffer, buffer_seek_start, 0);
+buffer_write(buffer, buffer_u16, KEY_RELEASED);
+var length = 0;
+var arr;
+
+if(keyboard_check_released(ord("W")))
+{
+    keyReleased = 1;
+    arr[length] = "W";
+    length++;
+}
+if(keyboard_check_released(ord("S")))
+{
+    keyReleased = 1;
+    arr[length] = "S";
+    length++;
+}
+if(keyboard_check_released(ord("A")))
+{
+    keyReleased = 1;
+    arr[length] = "A";
+    length++;
+}
+if(keyboard_check_released(ord("D")))
+{
+    keyReleased = 1;
+    arr[length] = "D";
+    length++;
+}
+
+if(keyReleased){
     //Write Buffer
     buffer_write(buffer, buffer_u16, length);
     for(i = 0; i &lt; length; i++){
