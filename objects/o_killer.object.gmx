@@ -49,7 +49,7 @@ image_angle = point_direction(x, y, mouse_x, mouse_y)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = point_direction(x, y, mouse_x, mouse_y)
+            <string>//image_angle = point_direction(x, y, mouse_x, mouse_y)
 if(keyboard_check(ord("W")))
 {
     //snd_packet_server(o_client.client_socket, buffer);

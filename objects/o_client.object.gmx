@@ -30,8 +30,7 @@
 // CONSTANTS
 TEST = 0;
 KEY = 1;
-MOUSE_X = 2;
-MOUSE_Y = 3;
+MOUSE = 2;
 
 // Variables
 type = network_socket_tcp;
@@ -144,6 +143,35 @@ if(keyPressed){
     snd_packet_server(client_socket, buffer);
 }
 
+buffer_delete(buffer);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Send mouse locations to server
+
+var buffer = buffer_create(256, buffer_grow, 1);
+buffer_seek(buffer, buffer_seek_start, 0);
+buffer_write(buffer, buffer_u16, MOUSE);
+buffer_write(buffer, buffer_u16, mouse_x);
+buffer_write(buffer, buffer_u16, mouse_y);
+snd_packet_server(client_socket, buffer);
 buffer_delete(buffer);
 </string>
           </argument>

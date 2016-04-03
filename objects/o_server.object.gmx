@@ -30,8 +30,7 @@
 // CONSTANTS
 TEST = 0;
 KEY = 1;
-MOUSE_X = 2;
-MOUSE_Y = 3;
+MOUSE = 2;
 
 
 // Variables
