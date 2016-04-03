@@ -73,17 +73,13 @@ var inst = argument[2];
         case MOUSE:
             //Use mouse
             show_debug_message("Mouse Data received");
+            var kmouse_x = buffer_read(buffer, buffer_u16);
+            var kmouse_y = buffer_read(buffer, buffer_u16);
             if(inst == 0){ //Killer
-                var kmouse_x = buffer_read(buffer, buffer_u16);
-                var kmouse_y = buffer_read(buffer, buffer_u16);
                 o_killer.image_angle = point_direction(o_killer.x, o_killer.y, kmouse_x,kmouse_y);
             }else if(inst == 1){ //Hider 1
-                var kmouse_x = buffer_read(buffer, buffer_u16);
-                var kmouse_y = buffer_read(buffer, buffer_u16);
                 o_hider.image_angle = point_direction(o_hider.x, o_hider.y, kmouse_x,kmouse_y);
             }else if(inst == 2){ //Hider 2
-                var kmouse_x = buffer_read(buffer, buffer_u16);
-                var kmouse_y = buffer_read(buffer, buffer_u16);
                 o_hider2.image_angle = point_direction(o_hider2.x, o_hider2.y, kmouse_x,kmouse_y); 
             }
         break;
