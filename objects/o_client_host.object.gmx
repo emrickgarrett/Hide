@@ -36,8 +36,8 @@ MOUSE_Y = 3;
 // Variables
 type = network_socket_tcp;
 PORT = 6510;// Post server port here.
-IP = get_string("Please enter the hosts IP", "127.0.0.1"); // Post server IP here.
-show_debug_message("User entered: " + IP);
+IP = "127.0.0.1"; // Post server IP here.
+
 client_socket = network_create_socket(type);
 server = network_connect(client_socket, IP, PORT);
 if server &lt; 0 {

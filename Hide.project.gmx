@@ -152,6 +152,7 @@
     <objects name="networking">
       <object>objects\o_server</object>
       <object>objects\o_client</object>
+      <object>objects\o_client_host</object>
     </objects>
   </objects>
   <rooms name="rooms">
