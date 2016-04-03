@@ -346,10 +346,10 @@ if n_id == client_socket{
                 with(o_client_host){ instance_destroy(); }
                 if(winner == CRUZ){
                     // cruz won
-                    room_goto(r_menu);
+                    room_goto(r_ted_wins);
                 }else if(winner == HIDERS){
                     // hiders won
-                    room_goto(r_menu);
+                    room_goto(r_ted_loses);
                 }
             break;
         }
