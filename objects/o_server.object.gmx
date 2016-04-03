@@ -175,32 +175,7 @@ buffer_delete(t_buffer);
           <argument>
             <kind>1</kind>
             <string>/// Detect client connections
-/*
-var n_id = ds_map_find_value(async_load, "id");
-if server_socket == n_id{
-    var t = ds_map_find_value(async_load, "type"); 
-    
-    switch(t){                            //get the type of network event
-        case network_type_connect:                               //get the socket id of the connection
-            var sock = ds_map_find_value(async_load, "socket"); //and store it in a variable
-            ds_list_add(socket_list, sock);                      //then write it to a ds_list for future reference
-            show_debug_message("Client Connected!!!");
-            break;
-        case network_type_disconnect:
-            var sock = ds_map_find_value(async_load, "socket");
-            ds_map_delete(socket_list, sock);
-            show_debug_message("Client Disconnected!!!");
-            break;
-        case network_type_data:
-            //Data handling here
-            var buffer = ds_map_find_value(async_load, "buffer");
-            var socket = ds_map_find_value(async_load, "id");
-            buffer_seek(buffer, buffer_seek_start, 0);
-            ReceivedPacket(buffer, socket);
-            break;
-    }
-}
-*/
+
 var n_id = ds_map_find_value(async_load, "id");
 if server_socket == n_id{
     var t = ds_map_find_value(async_load, "type"); 
@@ -223,12 +198,16 @@ if server_socket == n_id{
     }
 }
 
-if(n_id == sock){
-    var buffer = ds_map_find_value(async_load, "buffer");
-    var socket = ds_map_find_value(async_load, "id");
-    var inst = ds_list_find_index(socket_list, socket );
-    buffer_seek(buffer, buffer_seek_start, 0);
-    ReceivedPacket(buffer, socket, inst);
+
+for(var i = 0; i &lt; ds_list_size(socket_list); i++){
+    sock = ds_list_find_value(socket_list, i);
+    if(n_id == sock){
+        var buffer = ds_map_find_value(async_load, "buffer");
+        var socket = ds_map_find_value(async_load, "id");
+        var inst = ds_list_find_index(socket_list, socket );
+        buffer_seek(buffer, buffer_seek_start, 0);
+        ReceivedPacket(buffer, socket, inst);
+    }
 }
 </string>
           </argument>
