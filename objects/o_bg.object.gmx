@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>/// Start the bg music
 
-if(!audio_is_playing(scream_5)){
-    //audio_play_sound(scream_5, 0, 1);
+if(!audio_is_playing(ambience)){
+    audio_play_sound(ambience, 0, 1);
 }
 </string>
           </argument>
