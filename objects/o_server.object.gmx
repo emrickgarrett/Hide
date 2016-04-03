@@ -266,7 +266,7 @@ if(ds_list_size(socket_list) &gt;= 3 or debug){
     if(first_run){
         alarm[0] = 10;
         first_run = false;
-        snd_clients_id();
+        snd_clients_id(socket_list);
     }
 }
 </string>

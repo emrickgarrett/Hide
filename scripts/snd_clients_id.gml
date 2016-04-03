@@ -1,4 +1,5 @@
-///snd_clients_id();
+///snd_clients_id(socket_list);
+socket_list = argument[0];
 
 for(var i = 0; i < ds_list_size(socket_list); i++){
     sock = ds_list_find_value(socket_list, i);
