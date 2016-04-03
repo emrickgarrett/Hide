@@ -11,7 +11,7 @@ var buffer = argument[0];
 var socket = argument[1];
 var inst = argument[2];
     
-//if(buffer >= 0){
+if(gameStart or debug){
     var msgid = buffer_read(buffer, buffer_u16);
     show_debug_message(inst);
     switch(msgid){
@@ -143,4 +143,4 @@ var inst = argument[2];
             show_debug_message(buffer_read(buffer, buffer_string));
         break;
         }
-//}
+}
