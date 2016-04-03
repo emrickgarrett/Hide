@@ -35,7 +35,7 @@ if(!instance_exists(o_client)){
     with (m) {
         // Killer will have a red glow to their light
         image_blend = make_color_rgb(255, 75, 75);
-        light_change_scale(1.6, 1.6);
+        light_change_scale(1.4, 1.4);
         // Update the light, so it's surface is drawn correctly
         light_update();
     }

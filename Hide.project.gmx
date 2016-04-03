@@ -175,6 +175,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
+    <room>rooms\r_house2</room>
     <room>rooms\r_house3</room>
     <room>rooms\r_ted_loses</room>
     <room>rooms\r_ted_wins</room>

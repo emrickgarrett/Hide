@@ -29,8 +29,6 @@
 
 server = instance_create(-1000,-1000,o_server);
 client_host = instance_create(-1000, -1000, o_client_host);
-
-room_goto_next();
 </string>
           </argument>
         </arguments>

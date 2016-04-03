@@ -42,6 +42,8 @@ HIDERS = 10;
 CHAR = 11;
 SND = 12;
 
+map = get_integer("Enter a map number 1-2", 1);
+
 
 // Variables
 max_clients = 3; // Only 3 players are in game
@@ -91,6 +93,18 @@ if server_socket &gt;= 0{
 gameStart = 0;
 debug = 0;
 first_run = 1;
+
+
+//Go to the correct map
+switch(map){
+    case 2:
+        room_goto(r_house2);
+        break;
+    default:
+        room_goto(r_house3);
+    break;    
+
+}
 </string>
           </argument>
         </arguments>
