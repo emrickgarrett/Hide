@@ -42,6 +42,7 @@
       <sprite>sprites\s_tv_flatscreen</sprite>
       <sprite>sprites\s_couch_black</sprite>
       <sprite>sprites\s_flowerpot</sprite>
+      <sprite>sprites\s_stool</sprite>
     </sprites>
     <sprites name="walls">
       <sprite>sprites\s_wall_left</sprite>
@@ -115,6 +116,7 @@
         <object>objects\o_tv_flatscreen</object>
         <object>objects\o_couch_black</object>
         <object>objects\o_flowerpot</object>
+        <object>objects\o_stool</object>
       </objects>
       <objects name="items">
         <object>objects\o_plate</object>
