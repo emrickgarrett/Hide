@@ -14,6 +14,8 @@
     <sprites name="menu">
       <sprite>sprites\s_play</sprite>
       <sprite>sprites\s_hide</sprite>
+      <sprite>sprites\s_host</sprite>
+      <sprite>sprites\s_join</sprite>
     </sprites>
     <sprites name="floor">
       <sprite>sprites\s_kitchen_white</sprite>
@@ -144,6 +146,8 @@
     <objects name="menu">
       <object>objects\o_hide</object>
       <object>objects\o_play</object>
+      <object>objects\o_host</object>
+      <object>objects\o_join</object>
     </objects>
     <objects name="networking">
       <object>objects\o_server</object>
@@ -151,8 +155,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\r_house1</room>
     <room>rooms\r_menu</room>
+    <room>rooms\r_house1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

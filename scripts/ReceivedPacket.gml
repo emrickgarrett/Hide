@@ -38,6 +38,36 @@ var inst = argument[2];
                             o_killer.x += 8;
                         break;
                     }
+                }else if(inst == 1){    //Hider 1
+                    switch(key){
+                        case "W":
+                            o_hider.y -= 8;
+                        break;
+                        case "A":
+                            o_hider.x -= 8;
+                        break;
+                        case "S":
+                            o_hider.y += 8;
+                        break;
+                        case "D":
+                            o_hider.x += 8;
+                        break;
+                    }
+                }else if(inst == 2){
+                    switch(key){
+                        case "W":
+                            o_hider2.y -= 8;
+                        break;
+                        case "A":
+                            o_hider2.x -= 8;
+                        break;
+                        case "S":
+                            o_hider2.y += 8;
+                        break;
+                        case "D":
+                            o_hider2.x += 8;
+                        break;
+                    }
                 }
             }
         break;
