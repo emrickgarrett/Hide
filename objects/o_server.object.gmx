@@ -92,7 +92,7 @@ if server_socket &gt;= 0{
             <string>/// Gameplay variables
 
 gameStart = 0;
-debug = 0;
+debug = 1;
 first_run = 1;
 load_map = 0;
 
@@ -455,7 +455,7 @@ if server_socket == n_id{
     }
 }
 
-
+// Check to make sure socket exists
 for(var i = 0; i &lt; ds_list_size(socket_list); i++){
     sock = ds_list_find_value(socket_list, i);
     if(n_id == sock){
