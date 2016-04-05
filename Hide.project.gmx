@@ -185,7 +185,7 @@
     <room>rooms\r_house1</room>
     <room>rooms\r_maze</room>
   </rooms>
-  <constants number="15">
+  <constants number="17">
     <constant name="TEST">0</constant>
     <constant name="KEY">1</constant>
     <constant name="MOUSE">2</constant>
@@ -201,6 +201,8 @@
     <constant name="SND">12</constant>
     <constant name="MAP">13</constant>
     <constant name="DEATH">14</constant>
+    <constant name="KILLER_RADIUS">1.4</constant>
+    <constant name="HIDER_RADIUS">1.5</constant>
   </constants>
   <help>
     <rtf>help.rtf</rtf>

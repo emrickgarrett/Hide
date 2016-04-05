@@ -60,7 +60,7 @@ if(!instance_exists(o_server)){
     player_light = instance_create(x, y, obj_light);
     with (player_light) {
       image_blend = make_color_rgb(60 + irandom(55), 60 + irandom(55), 60 + irandom(55));
-      light_change_scale(1, 1);
+      light_change_scale(HIDER_RADIUS, HIDER_RADIUS);
       light_update();
     }
 }
