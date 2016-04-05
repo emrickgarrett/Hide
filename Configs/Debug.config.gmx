@@ -200,7 +200,7 @@
     <option_androidtv_use_test_ads>false</option_androidtv_use_test_ads>
     <option_argumenterrors>True</option_argumenterrors>
     <option_audioGroupCount>1</option_audioGroupCount>
-    <option_author></option_author>
+    <option_author>Garrett Emrick</option_author>
     <option_backimage>nil</option_backimage>
     <option_borderless>False</option_borderless>
     <option_changed>false</option_changed>
@@ -257,7 +257,9 @@
     <option_html5_usesplash>False</option_html5_usesplash>
     <option_icon>nil</option_icon>
     <option_in_app_purchase_sandbox_mode>0</option_in_app_purchase_sandbox_mode>
-    <option_information></option_information>
+    <option_information>All sound assets were found on Freesound.org
+
+The visual assets were pulled from Kenney.nl which are all loyalty free!</option_information>
     <option_interpolate>False</option_interpolate>
     <option_ios_adcolony_enable_V4VC>false</option_ios_adcolony_enable_V4VC>
     <option_ios_advertising_enable>false</option_ios_advertising_enable>
@@ -448,7 +450,7 @@
     <option_tizen_usesplash>False</option_tizen_usesplash>
     <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
-    <option_version>100</option_version>
+    <option_version>1</option_version>
     <option_version_build>0</option_version_build>
     <option_version_company></option_version_company>
     <option_version_copyright></option_version_copyright>
@@ -546,7 +548,7 @@
     <option_windows_splash_screen>Configs\Debug\windows\splash.png</option_windows_splash_screen>
     <option_windows_steam_app_id>0</option_windows_steam_app_id>
     <option_windows_texture_page>2048</option_windows_texture_page>
-    <option_windows_use_splash>-1</option_windows_use_splash>
+    <option_windows_use_splash>0</option_windows_use_splash>
     <option_windows_vertex_buffer_method2>1</option_windows_vertex_buffer_method2>
     <option_winphone_480_splash_image>Configs\Debug\WinPhone\SplashScreenImage480.jpg</option_winphone_480_splash_image>
     <option_winphone_720_splash_image>Configs\Debug\WinPhone\SplashScreenImage720.jpg</option_winphone_720_splash_image>
