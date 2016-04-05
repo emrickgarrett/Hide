@@ -27,22 +27,6 @@
             <kind>1</kind>
             <string>/// Setup the server
 
-// CONSTANTS
-TEST = 0;
-KEY = 1;
-MOUSE = 2;
-KILLER = 3;
-HIDER1 = 4;
-HIDER2 = 5;
-TIMER = 6;
-KEY_RELEASED = 7;
-GAME_OVER = 8;
-CRUZ = 9;
-HIDERS = 10;
-CHAR = 11;
-SND = 12;
-MAP = 13;
-
 map = get_integer("Enter a map number 1-4", 1);
 
 
@@ -92,7 +76,6 @@ if server_socket &gt;= 0{
             <string>/// Gameplay variables
 
 gameStart = 0;
-debug = 1;
 first_run = 1;
 load_map = 0;
 

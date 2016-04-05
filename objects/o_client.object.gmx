@@ -27,26 +27,10 @@
             <kind>1</kind>
             <string>/// Setup the client!
 
-// CONSTANTS
-TEST = 0;
-KEY = 1;
-MOUSE = 2;
-KILLER = 3;
-HIDER1 = 4;
-HIDER2 = 5;
-TIMER = 6;
-KEY_RELEASED = 7;
-GAME_OVER = 8;
-CRUZ = 9;
-HIDERS = 10;
-CHAR = 11;
-SND = 12;
-MAP = 13;
-
 // Variables
 type = network_socket_tcp;
 PORT = 6510;// Post server port here.
-IP = get_string("Please enter the hosts IP", "10.1.56.46"); // Post server IP here.
+IP = get_string("Please enter the hosts IP", "127.0.0.1"); // Post server IP here.
 show_debug_message("User entered: " + IP);
 client_socket = network_create_socket(type);
 show_debug_message("Client Socket Created");

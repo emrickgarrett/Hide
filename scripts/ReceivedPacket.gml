@@ -1,11 +1,6 @@
 /// ReceivedPacket(buffer, socket, inst)
 
-show_debug_message("Received");
-
-// CONSTANTS
-TEST = 0;
-KEY = 1;
-MOUSE = 2;
+//show_debug_message("Received");
 
 var buffer = argument[0];
 var socket = argument[1];
@@ -13,15 +8,15 @@ var inst = argument[2];
     
 if(gameStart or debug){
     var msgid = buffer_read(buffer, buffer_u16);
-    show_debug_message(inst);
+    //show_debug_message(inst);
     switch(msgid){
         case KEY:
             //A key has been pressed so read the keypress data from the buffer
-            show_debug_message("Key Press");
+            //show_debug_message("Key Press");
             var length = buffer_read(buffer, buffer_u16);
             for(i = 0; i < length; i++){
                 var key = buffer_read(buffer, buffer_string);
-                show_debug_message(key);
+                //show_debug_message(key);
                 if(inst == 0){ //The Killer!
                 if(instance_exists(o_killer))
                     switch(key){
@@ -81,11 +76,11 @@ if(gameStart or debug){
         break;
         case KEY_RELEASED:
             //A key has been pressed so read the keypress data from the buffer
-            show_debug_message("Key Release");
+            //show_debug_message("Key Release");
             var length = buffer_read(buffer, buffer_u16);
             for(i = 0; i < length; i++){
                 var key = buffer_read(buffer, buffer_string);
-                show_debug_message(key);
+                //show_debug_message(key);
                 if(inst == 0){ //The Killer!
                     if(instance_exists(o_killer))
                     switch(key){
@@ -145,7 +140,7 @@ if(gameStart or debug){
         break;
         case MOUSE:
             //Use mouse
-            show_debug_message("Mouse Data received");
+            //show_debug_message("Mouse Data received");
             var kmouse_x = buffer_read(buffer, buffer_u16);
             var kmouse_y = buffer_read(buffer, buffer_u16);
             if(inst == 0){ //Killer
