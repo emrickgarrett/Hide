@@ -130,7 +130,8 @@ if(vspeed != 0){
 with(o_hider2){
     if(!audio_is_playing(scream_5)){
         audio_play_sound(scream_5, 1, 0);
-    }  
+    } 
+    instance_create(x, y, o_blood_puddle); 
     instance_destroy();
 }
 </string>
@@ -159,7 +160,8 @@ with(o_hider2){
 with(o_hider){
     if(!audio_is_playing(scream_1)){
         audio_play_sound(scream_1, 1, 0);
-    }  
+    }
+    instance_create(x, y, o_blood_puddle);  
     instance_destroy();
 }
 </string>

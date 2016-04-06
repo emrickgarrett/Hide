@@ -81,6 +81,10 @@
       <sprite>sprites\s_debris3</sprite>
       <sprite>sprites\s_stain</sprite>
     </sprites>
+    <sprites name="decals">
+      <sprite>sprites\s_blood_splatter</sprite>
+      <sprite>sprites\s_footprints</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -174,6 +178,9 @@
     </objects>
     <object>objects\o_bg</object>
     <object>objects\o_menu_timer</object>
+    <objects name="blood">
+      <object>objects\o_blood_puddle</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
