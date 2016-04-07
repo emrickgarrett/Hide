@@ -176,11 +176,12 @@
       <object>objects\o_client</object>
       <object>objects\o_client_host</object>
     </objects>
-    <object>objects\o_bg</object>
-    <object>objects\o_menu_timer</object>
     <objects name="blood">
       <object>objects\o_blood_puddle</object>
+      <object>objects\o_blood_prints</object>
     </objects>
+    <object>objects\o_bg</object>
+    <object>objects\o_menu_timer</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
