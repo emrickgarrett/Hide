@@ -127,12 +127,16 @@ if(vspeed != 0){
           <argument>
             <kind>1</kind>
             <string>/// kill dat bish
-with(o_hider2){
-    if(!audio_is_playing(scream_5)){
-        audio_play_sound(scream_5, 1, 0);
-    } 
-    instance_create(x, y, o_blood_puddle); 
-    instance_destroy();
+if(instance_exists(o_server)){
+    with(o_hider2){
+        if(!audio_is_playing(scream_5)){
+            audio_play_sound(scream_5, 1, 0);
+        } 
+        instance_create(x, y, o_blood_puddle); 
+        o_server.hider2_x = x;
+        o_server.hider2_y = y;
+        instance_destroy();
+    }
 }
 </string>
           </argument>
@@ -157,12 +161,16 @@ with(o_hider2){
           <argument>
             <kind>1</kind>
             <string>/// kill dat bish
-with(o_hider){
-    if(!audio_is_playing(scream_1)){
-        audio_play_sound(scream_1, 1, 0);
+if(instance_exists(o_server)){
+    with(o_hider){
+        if(!audio_is_playing(scream_1)){
+            audio_play_sound(scream_1, 1, 0);
+        }
+        instance_create(x, y, o_blood_puddle);
+        o_server.hider1_x = x;
+        o_server.hider1_y = y;  
+        instance_destroy();
     }
-    instance_create(x, y, o_blood_puddle);  
-    instance_destroy();
 }
 </string>
           </argument>

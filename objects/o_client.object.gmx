@@ -433,6 +433,40 @@ if n_id == client_socket{
                     break;  
                 }
             break;
+            case DEATH:
+                var character = buffer_read(t_buffer, buffer_u16);
+                if(character == HIDER1){
+                    if(instance_exists(o_hider)){
+                        with(o_hider){
+                            var b_x = buffer_read(t_buffer, buffer_u16);
+                            var b_y = buffer_read(t_buffer, buffer_u16);
+                            
+                            instance_create(b_x, b_y, o_blood_puddle);
+                            
+                            if(!audio_is_playing(scream_1)){
+                                audio_play_sound(scream_1, 1, 0);
+                            }    
+                        
+                            instance_destroy();
+                        }
+                    }
+                }else if(character == HIDER2){
+                    if(instance_exists(o_hider2)){
+                        with(o_hider2){
+                            var b_x = buffer_read(t_buffer, buffer_u16);
+                            var b_y = buffer_read(t_buffer, buffer_u16);
+                            
+                            instance_create(b_x, b_y, o_blood_puddle);
+                            
+                            if(!audio_is_playing(scream_5)){
+                                audio_play_sound(scream_5, 1, 0);
+                            }
+                            
+                            instance_destroy();
+                        }
+                    }
+                }  
+            break;
         }
     }
 }
