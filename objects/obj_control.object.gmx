@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>// MUST HAVE: Create a surface for drawing all the lights
 sur = surface_create(room_width, room_height);
-cheat = 1;
 
 // Create a light
 if(!instance_exists(o_client)){
@@ -135,7 +134,7 @@ surface_reset_target();
           <argument>
             <kind>1</kind>
             <string>// Create a light on mouse position
-if(cheat){
+if(debug){
 
     with (instance_create(mouse_x, mouse_y, obj_light)) {
       image_blend = make_color_rgb(200 + irandom(55), 200 + irandom(55), 200 + irandom(55));
