@@ -33,6 +33,31 @@ following = 0;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// SHut off the bloody footprints
+
+bloody = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
@@ -108,6 +133,32 @@ if(vspeed != 0){
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Bloody footprint code here
+
+if(bloody and !place_meeting(x, y, o_blood_prints)){
+    var print = instance_create(x, y, o_blood_prints);
+    print.image_angle = image_angle;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="o_hider2">
       <action>
@@ -135,6 +186,8 @@ if(instance_exists(o_server)){
         instance_create(x, y, o_blood_puddle); 
         o_server.hider2_x = x;
         o_server.hider2_y = y;
+        bloody = 1;
+        alarm[0] = 150;
         instance_destroy();
     }
 }
@@ -169,6 +222,8 @@ if(instance_exists(o_server)){
         instance_create(x, y, o_blood_puddle);
         o_server.hider1_x = x;
         o_server.hider1_y = y;  
+        bloody = 1;
+        alarm[0] = 150;
         instance_destroy();
     }
 }

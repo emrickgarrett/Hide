@@ -100,6 +100,7 @@
     <script>scripts\snd_clients_id.gml</script>
     <script>scripts\send_client_boost_sound.gml</script>
     <script>scripts\send_client_map.gml</script>
+    <script>scripts\send_clients_bloody.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="characters">
