@@ -101,6 +101,18 @@
     <script>scripts\send_client_boost_sound.gml</script>
     <script>scripts\send_client_map.gml</script>
     <script>scripts\send_clients_bloody.gml</script>
+    <scripts name="twitter">
+      <script>scripts\scr_juju_twitter_init.gml</script>
+      <script>scripts\scr_juju_twitter_http_async.gml</script>
+      <script>scripts\scr_juju_twitter_add_request.gml</script>
+      <script>scripts\scr_juju_twitter_add_callback.gml</script>
+      <script>scripts\scr_juju_twitter_request_token.gml</script>
+      <script>scripts\scr_juju_twitter_request_general.gml</script>
+      <script>scripts\scr_juju_twitter_request_to_name.gml</script>
+      <script>scripts\scr_tweet_readout.gml</script>
+      <script>scripts\ds_map_readout.gml</script>
+      <script>scripts\scr_search_readout.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="characters">
@@ -183,6 +195,7 @@
     </objects>
     <object>objects\o_bg</object>
     <object>objects\o_menu_timer</object>
+    <object>objects\o_twitter</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_menu</room>
