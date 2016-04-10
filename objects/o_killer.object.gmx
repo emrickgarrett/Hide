@@ -28,6 +28,7 @@
             <string>image_speed = 0;
 image_angle = point_direction(x, y, mouse_x, mouse_y)
 following = 0;
+bloody = 0;
 </string>
           </argument>
         </arguments>
@@ -154,6 +155,34 @@ if(vspeed != 0){
 if(bloody and !place_meeting(x, y, o_blood_prints)){
     var print = instance_create(x, y, o_blood_prints);
     print.image_angle = image_angle;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="o_blood_puddle">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Set bloody to 1 on server, send message to clients
+
+if(instance_exists(o_server)){
+    bloody = 1;
+    send_clients_bloody(o_server.socket_list, 0);
 }
 </string>
           </argument>
