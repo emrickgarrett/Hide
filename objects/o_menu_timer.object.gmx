@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Create timer to switch to menu
-o_twitter.drawing = false;
+o_twitter.drawing = true;
 alarm[0] = 150;
 </string>
           </argument>

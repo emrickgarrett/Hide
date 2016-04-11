@@ -127,7 +127,7 @@ if(reset){
     show_debug_message("Number of tweets: " + string(size));
     if(size &gt; 0){
         i = random_range(0, size);
-        str = "Ted Cruz says: " + ds_list_find_value(list, i);
+        str = ds_list_find_value(list, i);
         show_debug_message("Tweet found! Got: " + str);
         reset = false;
     }
@@ -183,7 +183,17 @@ scr_juju_twitter_http_async( 2 );
             <string>/// Draw onto the screen one of Ted's random tweets.
 
 if(drawing){
-    draw_text(10, room_height-100, str);
+    show_debug_message("Drawing?");
+    if(str == ""){
+        reset = true;
+    }else{
+        str = string_replace_all(str, "#", "+");
+    }
+    draw_set_alpha(1);
+    draw_set_colour(c_red);
+    draw_text_transformed(10, room_height-100, "Ted Cruz Says: ", 1.5, 1.5, 0);
+    draw_set_colour(c_white);
+    draw_text_ext(25, room_height-70, str, 15, room_width-60);
 }
 </string>
           </argument>
