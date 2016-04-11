@@ -22,10 +22,15 @@
 var json = argument0;
 
 var list = ds_map_find_value( json, "default" );
+show_debug_message("Loading Tweets into list");
 
-var size = ds_list_size( list );
+var size = ds_list_size(list);
+//var size = ds_list_size( o_twitter.list );
+show_debug_message("List size: " + string(size));
 var str = "Tweets from @" + twitterUser + ":";
-for( var i = 0; i < size; i++ ) str += "#---#" + ds_map_find_value( ds_list_find_value( list, i ), "text" );
+for( var i = 0; i < size; i++ ){
+    ds_list_add(o_twitter.list, ds_map_find_value( ds_list_find_value(list, i ), "text" ));
+}
 
-show_message( str );
+//show_message( str );
 

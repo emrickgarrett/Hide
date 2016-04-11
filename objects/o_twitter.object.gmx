@@ -3,12 +3,41 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-100</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Set variables for twitter use in game
+
+//Variables for drawing
+i = 0;
+str = "";
+reset = false;
+drawing = false;
+list = ds_list_create();
+size = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -74,6 +103,39 @@ if ( global.juju_twitter_token != "" ) and ( !requestFired ) {
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Get a random tweet from twitter list
+
+if(reset){
+    show_debug_message("Getting Tweet from List");
+    size = ds_list_size(list);
+    show_debug_message("Number of tweets: " + string(size));
+    if(size &gt; 0){
+        i = random_range(0, size);
+        str = "Ted Cruz says: " + ds_list_find_value(list, i);
+        show_debug_message("Tweet found! Got: " + str);
+        reset = false;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="7" enumb="62">
       <action>
@@ -96,6 +158,33 @@ if ( global.juju_twitter_token != "" ) and ( !requestFired ) {
 //http://jsonviewer.stack.hu/
 
 scr_juju_twitter_http_async( 2 );
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Draw onto the screen one of Ted's random tweets.
+
+if(drawing){
+    draw_text(10, room_height-100, str);
+}
 </string>
           </argument>
         </arguments>
