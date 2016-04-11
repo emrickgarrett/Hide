@@ -467,6 +467,23 @@ if n_id == client_socket{
                     }
                 }  
             break;
+            case BLOODY:
+                var character = buffer_read(t_buffer, buffer_u16);
+                switch(character){
+                    case 0: // Killer
+                        o_killer.bloody = 1;
+                        o_killer.alarm[0] = 150;
+                    break;
+                    case 1: // Hider1
+                        o_hider.bloody = 1;
+                        o_hider.alarm[0] = 150;
+                    break;
+                    case 2: // Hider2
+                        o_hider2.bloody = 1;
+                        o_hider2.alarm[0] = 150;
+                    break;
+                }
+            break;
         }
     }
 }

@@ -329,13 +329,14 @@ if n_id == client_socket{
                 show_debug_message("GAME OVER");
                 var winner = buffer_read(t_buffer, buffer_u16);
                 with(o_server){ instance_destroy(); }
-                with(o_client_host){ instance_destroy(); }
                 if(winner == CRUZ){
                     // cruz won
                     room_goto(r_ted_wins);
+                    with(o_client_host){ instance_destroy(); }
                 }else if(winner == HIDERS){
                     // hiders won
                     room_goto(r_ted_loses);
+                    with(o_client_host){ instance_destroy(); }
                 }
             break;
             case SND:

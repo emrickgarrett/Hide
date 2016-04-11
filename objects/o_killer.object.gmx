@@ -182,6 +182,7 @@ if(bloody and !place_meeting(x, y, o_blood_prints)){
 
 if(instance_exists(o_server)){
     bloody = 1;
+    alarm[0] = 150;
     send_clients_bloody(o_server.socket_list, 0);
 }
 </string>
@@ -217,6 +218,7 @@ if(instance_exists(o_server)){
         o_server.hider2_y = y;
         bloody = 1;
         alarm[0] = 150;
+        send_clients_bloody(o_server.socket_list, 0);
         instance_destroy();
     }
 }
@@ -253,6 +255,7 @@ if(instance_exists(o_server)){
         o_server.hider1_y = y;  
         bloody = 1;
         alarm[0] = 150;
+        send_clients_bloody(o_server.socket_list, 0);
         instance_destroy();
     }
 }
